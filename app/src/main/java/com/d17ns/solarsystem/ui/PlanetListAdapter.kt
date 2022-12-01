@@ -50,6 +50,7 @@ class PlanetListAdapter(val clickListener: PlanetListener) :
     }
 }
 
+// class PlanetListener yang akan menampilkan detail informasi dari planet yang diklik
 class PlanetListener(val clickListener: (planet: Planet) -> Unit) {
     fun onClick(planet: Planet) = clickListener(planet)
 }
