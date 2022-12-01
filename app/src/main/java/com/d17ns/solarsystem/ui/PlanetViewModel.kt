@@ -11,6 +11,10 @@ import kotlinx.coroutines.launch
 // enum class PlanetApiStatus untuk menampilkan status request ke user
 enum class PlanetApiStatus { LOADING, ERROR, DONE }
 
+/*
+ * class PlanetViewModel sebagai ViewModel yang mencakup
+ * variabel-variabel LiveData dan implementasi PlanetAPiStatus
+ */
 class PlanetViewModel : ViewModel() {
 
     // LiveData variabel _status untuk menampilkan status dari PlanetApiStatus
